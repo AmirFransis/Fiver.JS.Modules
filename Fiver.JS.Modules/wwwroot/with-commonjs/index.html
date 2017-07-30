@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <h1>JavaScript Modules (CommonJS)</h1>
+    <p>Open Console...</p>
+
+    <script src="system.js"></script>
+    <script>
+        System.config({
+            meta: {
+                format: 'cjs'
+            }
+        });
+        System.import('app.js');
+    </script>
+
+</body>
+</html>

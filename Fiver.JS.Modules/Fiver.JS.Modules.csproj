@@ -1,15 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Content Include="wwwroot\default.html" />
+    <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\with-commonjs\app.js" />
+    <Content Include="wwwroot\with-commonjs\index.html">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\with-commonjs\movie-service.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\with-commonjs\movie.js" />
+    <Content Include="wwwroot\without-modules\app.js" />
+    <Content Include="wwwroot\without-modules\index.html" />
+    <Content Include="wwwroot\without-modules\movie-service.js" />
+    <Content Include="wwwroot\without-modules\movie.js" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
   </ItemGroup>
 
 </Project>
