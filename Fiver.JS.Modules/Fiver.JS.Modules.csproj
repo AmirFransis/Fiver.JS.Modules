@@ -42,6 +42,18 @@
     <Content Include="wwwroot\with-es2015\system.js">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="wwwroot\with-webpack\app.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\with-webpack\index.html">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\with-webpack\movie-service.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\with-webpack\movie.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="wwwroot\without-modules\app.js" />
     <Content Include="wwwroot\without-modules\index.html" />
     <Content Include="wwwroot\without-modules\movie-service.js" />
@@ -54,6 +66,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\with-browserify\build\" />
     <Folder Include="wwwroot\with-browserify\build\" />
+    <Folder Include="wwwroot\with-webpack\build\" />
   </ItemGroup>
 
 </Project>
