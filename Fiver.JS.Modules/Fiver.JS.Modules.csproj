@@ -7,6 +7,18 @@
   <ItemGroup>
     <Content Include="wwwroot\default.html" />
     <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\with-browserify\app.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\with-browserify\index.html">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\with-browserify\movie-service.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\with-browserify\movie.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="wwwroot\with-commonjs\app.js" />
     <Content Include="wwwroot\with-commonjs\index.html">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -38,6 +50,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\with-browserify\build\" />
+    <Folder Include="wwwroot\with-browserify\build\" />
   </ItemGroup>
 
 </Project>
