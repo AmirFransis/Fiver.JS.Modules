@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "babelme": "node_modules\\.bin\\babel wwwroot\\with-es2015 --presets es2015 --out-dir wwwroot\\with-es2015\\build",
     "browserifyme": "node_modules\\.bin\\browserify wwwroot\\with-browserify\\app.js --outfile wwwroot\\with-browserify\\build\\bundle.js",
-    "webpackme": "node_modules\\.bin\\webpack"
+    "webpackme": "node_modules\\.bin\\webpack",
+    "babelmeoop": "node_modules\\.bin\\babel wwwroot\\with-es2015-oop --presets es2015 --out-dir wwwroot\\with-es2015-oop\\build"
   },
   "author": "",
   "license": "ISC",
